@@ -1,2 +1,6 @@
 // Renderiza el componente principal en el elemento con id "root" del DOM
-ReactDOM.render(React.createElement(App), document.getElementById('root'));
+
+//console.log(LJS_getMainFuncs());
+//console.log(LJS_getUrlParams());
+
+LJS_evalMain();

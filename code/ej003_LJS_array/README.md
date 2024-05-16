@@ -1,6 +1,6 @@
 # Structure React CDN example
 
-## Example 2
+## Example 3
 
 - React v17 + Boostrap v5.
 
