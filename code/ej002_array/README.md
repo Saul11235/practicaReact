@@ -3,4 +3,5 @@
 ## Example 2
 
 - React v17 + Boostrap v5.
+- render array elements
 
