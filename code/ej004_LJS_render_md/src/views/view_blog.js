@@ -2,11 +2,6 @@
 console.log("ad view blog");
 
 function Blog() {
-  let url="./data/blog/cats/blog.md";
-
-  console.log(textt);
-  console.log(url);
-  console.log(response)
 
   let newUrl=LJS_makeUrl("","");
   let markdownContent = `
