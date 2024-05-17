@@ -1,24 +1,24 @@
 
 console.log("ad view blog");
 
+async function getMarkdown(nameAnimal){
+  let fullUrl="./data/blog/"+nameAnimal+"/blog.md";
+   try {
+     console.log(getFile(fullUrl));
+     return "#  Animal";
+   } catch (error) {
+     console.error("error en archivo",error);
+     return "# Error reading file";
+   };
+};
+
+
 function Blog() {
 
   let newUrl=LJS_makeUrl("","");
-  let markdownContent = `
-# Hello, Markdown!
-
-This is a *simple* example of **Markdown**.
-
-- Bullet point 1
-- Bullet point 2
-
-\`\`\`javascript
-console.log('This is a code block');
-\`\`\`
-	`;
+  let markdownContent = getMarkdown(LocalJsStorage_args);
   let htmlContent = marked.parse(markdownContent);
   
- 
 
     return (
         React.createElement('div', {className:"card"},
