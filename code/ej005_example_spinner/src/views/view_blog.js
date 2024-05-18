@@ -1,22 +1,10 @@
 
-console.log("ad view blog");
-
-async function getMarkdown(nameAnimal){
-  let fullUrl="./data/blog/"+nameAnimal+"/blog.md";
-   try {
-     console.log(getFile(fullUrl));
-     return "#  Animal";
-   } catch (error) {
-     console.error("error en archivo",error);
-     return "# Error reading file";
-   };
-};
-
 
 function Blog() {
 
   let newUrl=LJS_makeUrl("","");
-  let markdownContent = getMarkdown(LocalJsStorage_args);
+  let urlMarkdown=LJS_get("blog/"+LocalJsStorage_args+"/blog.md");
+  let markdownContent = getFile(urlMarkdown)[0];
   let htmlContent = marked.parse(markdownContent);
   
 
@@ -26,6 +14,7 @@ function Blog() {
 	  React.createElement("h2",null,LocalJsStorage_args),
           React.createElement('p', null, 'This is a basic React app using CDN.'),
           React.createElement('a', {className:"link",href:newUrl}, 'Return to home. <hiperlink>'),
+          React.createElement('a', {className:"link",href:urlMarkdown}, 'go to markdown'),
           React.createElement('p', null, 'CONTENT'),
           React.createElement('div', {dangerouslySetInnerHTML: {__html: htmlContent}}),
         )

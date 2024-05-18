@@ -1,18 +1,38 @@
 // get File
-console.log("get file");
 
-async function getFile(url) {
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const text = await response.text();
-        return text;
-    } catch (error) {
-        console.error('Error fetching file:', error);
-        return null;
-    }
+function getFile(url) {
+  return ["# lolo",true];
+ 
+  let fetchFile=fetch(url);
+  console.log("ini------------------------");
+  console.log(fetchFile);
+
+  try {
+    fetchFile.then(response => {
+      if (!response.ok) {
+	return ["000",false];
+      };
+      return ["111",true];
+    })
+    .then(data => {
+      // Hacer algo con los datos obtenidos
+      console.log(data);
+      return [data,true];
+    })
+    .catch(error => {
+      console.log(error);
+      return ["222",false];
+    });
+  } catch (error) {
+      console.log(error);
+      return ["333",false];
+  };
+
+  console.log("fin------------------------");
+
 }
 
-// Example usage:
+// get content of file
+// return [content, true] if file exists and is text
+// return ["", false]
+
