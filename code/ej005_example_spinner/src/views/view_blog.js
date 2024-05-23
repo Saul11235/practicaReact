@@ -6,7 +6,6 @@ function Blog() {
   let urlMarkdown=LJS_get("blog/"+LocalJsStorage_args+"/blog.md");
   let markdownContent = getFile(urlMarkdown)[0];
   let htmlContent = marked.parse(markdownContent);
-  
 
     return (
         React.createElement('div', {className:"card"},

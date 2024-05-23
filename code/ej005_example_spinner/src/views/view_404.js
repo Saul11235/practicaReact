@@ -1,4 +1,4 @@
-console.log("ad view v404");
+//console.log("ad view v404");
 
 function v404() {
     let newUrl=LJS_makeUrl("","");

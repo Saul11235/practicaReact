@@ -1,5 +1,4 @@
 
-console.log("ad view main");
 
 function App() {
     let var404=LJS_makeUrl("404","");
