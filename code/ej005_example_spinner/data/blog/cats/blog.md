@@ -13,6 +13,11 @@ Cats are beloved pets around the world known for their independence, agility, an
 | Ragdoll           | Large     | Long        | Relaxed, affectionate          | ![Ragdoll](https://via.placeholder.com/150)       |
 | Scottish Fold     | Small     | Short       | Sweet-natured, folded ears     | ![Scottish Fold](https://via.placeholder.com/150) |
 
+    // code
+    print("helloworld")
+    for x in range(3):
+        print(x)
+
 ## Cat Characteristics
 
 - **Independence**: Cats are known for their independent nature and ability to entertain themselves.
@@ -30,4 +35,7 @@ To properly care for a cat, it is important to:
 3. Offer plenty of opportunities for play and mental stimulation.
 4. Schedule regular veterinary check-ups and vaccinations.
 5. Create a safe and stimulating environment for your cat, including scratching posts and perches.
+
+## test UTF
+la niña Úrsula y su mamá.
 
